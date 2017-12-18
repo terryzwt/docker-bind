@@ -3,7 +3,7 @@ version: '3'
 services:
   bind:
     restart: always
-    image: terryzwt/bind
+    image: zterry95/bind
     ports:
       - "53:53/udp"
       - "53:53/tcp"

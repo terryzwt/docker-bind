@@ -14,6 +14,7 @@ RUN rm -rf /etc/apt/apt.conf.d/docker-gzip-indexes \
  && curl http://www.webmin.com/jcameron-key.asc | apt-key add - \
  && echo "deb http://download.webmin.com/download/repository sarge contrib" >> /etc/apt/sources.list \
  && apt-get update \
+ && apt-get -y upgrade \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y bind9 webmin dnsutils 
 
 ###### clean up #########
